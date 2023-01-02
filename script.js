@@ -5,7 +5,7 @@ desses parâmetros.
 */
 
 let sum = function calculateSum(a,b) { 
-    return a + b; 
+    return `a soma de ${a} + ${b} é igual a ${a + b}; `
 }
 // ?
 
@@ -14,6 +14,7 @@ Invoque a função criada acima, passando dois números que serão somados, e mo
 o resultado no console, com a frase:
 "A soma de [VALOR 1] e [VALOR2] é igual a [RESULTADO]."
 */
+    console.log(sum(10, 25)); 
 // ?
 
 /*
