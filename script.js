@@ -21,6 +21,7 @@ o resultado no console, com a frase:
 Mostre no console o nome da função criada acima, com a frase:
 "O nome da função que faz a soma é [NOME DA FUNÇÃO]."
 */
+console.log(`O nome da função que faz a soma é ${sum.name}`);
 // ?
 
 /*
