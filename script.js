@@ -91,7 +91,7 @@ function calculator(operador) {
 Declare uma variável chamada `sum`, que receberá a função acima, passando como
 parâmetro o operador de soma.
 */
-let sum2 = calculator("/");
+let sum2 = calculator("+");
 // ?
 
 /*
@@ -105,10 +105,17 @@ Agora, declare algumas variáveis com os nomes `subtraction`, `multiplication`,
 `division` e `mod`, e atribua a elas a função `calculator`, passando o operador
 correto por parâmetro para cada uma delas.
 */
+let subtraction = calculator("-"); 
+let multiplication = calculator("*"); 
+let division = calculator("/");
 // ?
 
 /*
 Faça uma operação com cada uma das funções criadas acima, mostrando o resultado
 no console.
 */
+subtraction(25,10); 
+multiplication(5,20); 
+division(4,2);
+
 // ?
