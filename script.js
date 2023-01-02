@@ -28,11 +28,16 @@ console.log(`O nome da função que faz a soma é ${sum.name}`);
 Crie uma função literal chamada `showName`. Essa função deve retornar o
 seu nome.
 */
+function showName() { 
+    return "Vitor Silva de Souza"
+}
+
 // ?
 
 /*
 Declare uma variável chamada `varShowName` que recebe a função criada acima.
 */
+let varShowName = showName; 
 // ?
 
 /*
@@ -40,6 +45,7 @@ Usando a variável criada acima, mostre no console o nome e o retorno da funçã
 atribuída a ela, com a seguinte frase:
 "A função [NOME DA FUNÇÃO] retorna [RETORNO DA FUNÇÃO]."
 */
+console.log(`A função ${varShowName.name} retorna ${varShowName()}`);
 // ?
 
 /*
@@ -54,17 +60,44 @@ vai efetuar. Será uma string com os valores `+`, `-`, `*`, `/` ou `%`;
   - Se o operador não for válido, retornar a frase:
   "Operação inválida."
 */
+function calculator(operador) { 
+        return (a, b) => { 
+            switch(operador) { 
+                case "+": 
+                console.log(`Resultado da operação ${a} ${operador} ${b} = ${a + b}`) 
+                break; 
+                case "-": 
+                console.log(`Resultado da operação ${a} ${operador} ${b} = ${a - b}`)  
+                break; 
+                case "*": 
+                console.log(`Resultado da operação ${a} ${operador} ${b} = ${a * b}`)
+                break; 
+                case "/":
+                    console.log(`Resultado da operação ${a} ${operador} ${b} = ${a / b}`)
+                break; 
+                case "%": 
+                console.log(`Resultado da operação ${a} ${operador} ${b} = ${a % b}`) 
+                break;
+                default: 
+                console.log("Operador invalido");
+                
+            }
+        }
+}
+
 // ?
 
 /*
 Declare uma variável chamada `sum`, que receberá a função acima, passando como
 parâmetro o operador de soma.
 */
+let sum2 = calculator("/");
 // ?
 
 /*
 Agora `sum` é uma função. Mostre no console a soma de dois números, usando ela.
 */
+sum2(15,25);
 // ?
 
 /*
